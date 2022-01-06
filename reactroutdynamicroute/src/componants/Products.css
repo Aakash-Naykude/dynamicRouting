@@ -1,0 +1,14 @@
+.prodList{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2%;
+    border: 1px solid black;
+}
+.img{
+    width: 50%;
+    height: 200px;
+}
+.image{
+    width: 35%;
+    height: 500px;
+}
