@@ -16,9 +16,15 @@ export const ProductsDet = () => {
   return (
     <div>
       <img className="image" src={list.image} alt="imag" />
-      <h1>{list.title}<br/>{list.price}</h1>
-      <h3 style={{width:"70%", marginLeft:"15%"}}>{list.description}</h3>
-      <button><Link to={`/products`}>Back to shopping</Link></button>
+      <h1>
+        {list.title}
+        <br />
+        {list.price}
+      </h1>
+      <h3 style={{ width: "70%", marginLeft: "15%" }}>{list.description}</h3>
+      <button>
+        <Link to={`/products`}>Back to shopping</Link>
+      </button>
     </div>
   );
 };
