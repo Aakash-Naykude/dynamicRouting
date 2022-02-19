@@ -13,9 +13,20 @@ export const Products = () => {
       .then((json) => setList(json));
   };
   console.log(list);
-  return <div className="prodList">{list.map((e, i) => <div key={i}>
-      <img src={e.image} alt="product" className="img" />
-      <h4>{e.title}<br/> Price : {e.price}</h4>
-      <button><Link to={`/products/${e.id}`}>More Info</Link></button>
-  </div>)}</div>;
+  return (
+    <div className="prodList">
+      {list.map((e, i) => (
+        <div key={i}>
+          <img src={e.image} alt="product" className="img" />
+          <h4>
+            {e.title}
+            <br /> Price : {e.price}
+          </h4>
+          <button>
+            <Link to={`/products/${e.id}`}>More Info</Link>
+          </button>
+        </div>
+      ))}
+    </div>
+  );
 };
